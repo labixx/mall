@@ -1,0 +1,44 @@
+export default {
+    //保存token
+    setToken(state,token){
+        state.token = token;
+        window.sessionStorage.setItem('token',token);
+    },
+    //修改用户信息窗口
+    DialogVisible(state){
+        this.state.editDialogVisible=!this.state.editDialogVisible;
+    },
+    //添加角色信息
+    addRoleDialog(state){
+        this.state.addRoleDialogVisibe=!this.state.addRoleDialogVisibe;
+    },
+    //修改角色信息
+    editRoleDialog(state){
+        this.state.editRoleDialogVisible=!this.state.editRoleDialogVisible;
+    },
+    //分配橘色信息窗口
+    assignDialog(state){
+        this.state.assignDialogVisible=!this.state.assignDialogVisible;
+    },
+    //编辑订单信息窗口
+    editOrderDialog(state){
+        this.state.editOrderDialogVisible=!this.state.editOrderDialogVisible;
+    },
+    //查看物流信息窗口
+    checkOrderDialog(state){
+        this.state.checkOrderDialogVisible=!this.state.checkOrderDialogVisible;
+    },
+    //添加分类窗口
+    addCatagoryDialog(state){
+        this.state.addCategoryDialogVisible=!this.state.addCategoryDialogVisible;
+    },
+     //编辑分类窗口
+     editCatagoryDialog(state){
+        this.state.editCategoryDialogVisible=!this.state.editCategoryDialogVisible;
+    },
+    //编辑参数
+    editParDialog(state){
+        this.state.editParDialogVisible=!this.state.editParDialogVisible;
+    }
+
+}
